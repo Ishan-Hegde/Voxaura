@@ -1,4 +1,4 @@
-# voxaura
+# VoxAura
 
 A new Flutter project.
 
