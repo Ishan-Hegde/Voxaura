@@ -12,12 +12,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'VoxAura',
       theme: ThemeData.dark(useMaterial3: true).copyWith(
         scaffoldBackgroundColor: Pallete.blackColor,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Pallete.blackColor,
+        ),
       ),
       home: const HomePage(),
-      debugShowCheckedModeBanner: false,
     );
   }
 }
