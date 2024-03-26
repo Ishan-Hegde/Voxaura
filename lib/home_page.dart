@@ -17,13 +17,14 @@ class _HomePageState extends State<HomePage> {
           centerTitle: true,
           leading: const Icon(Icons.menu),
         ),
+        //Virtual Assistant Circular Picutre
         body: Column(children: [
           Stack(children: [
             Center(
               child: Container(
                 height: 120,
                 width: 120,
-                margin: const EdgeInsets.only(top: 4),
+                margin: const EdgeInsets.only(top: 10),
                 decoration: const BoxDecoration(
                   color: Pallete.assistantCircleColor,
                   shape: BoxShape.circle,
@@ -31,7 +32,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             Container(
-                height: 124,
+                height: 130,
                 decoration: const BoxDecoration(
                     shape: BoxShape.circle,
                     image: DecorationImage(
@@ -39,7 +40,27 @@ class _HomePageState extends State<HomePage> {
                         'assets/images/virtualAssistant.png',
                       ),
                     )))
-          ])
+          ]),
+          //Chat Bubble
+          Container(
+              padding: const EdgeInsets.symmetric(
+                horizontal: 20,
+                vertical: 10,
+              ),
+              margin: const EdgeInsets.symmetric(
+                horizontal: 40,
+              ).copyWith(
+                top: 30,
+              ),
+              decoration: BoxDecoration(
+                border: Border.all(
+                  color: Pallete.borderColor,
+                ),
+              ),
+              child: const Text(
+                'Good Morning, how may I assist you today?',
+                style: TextStyle(fontSize: 20, color: Pallete.whiteColor),
+              )),
         ]));
   }
 }
