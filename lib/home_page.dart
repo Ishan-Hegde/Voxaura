@@ -57,9 +57,15 @@ class _HomePageState extends State<HomePage> {
                   color: Pallete.borderColor,
                 ),
               ),
-              child: const Text(
-                'Good Morning, how may I assist you today?',
-                style: TextStyle(fontSize: 20, color: Pallete.whiteColor),
+              child: const Padding(
+                padding: EdgeInsets.symmetric(vertical: 10.0),
+                child: Text(
+                  'Good Morning, how may I assist you today?',
+                  style: TextStyle(
+                      fontSize: 25,
+                      color: Pallete.whiteColor,
+                      fontFamily: 'Cera Pro'),
+                ),
               )),
         ]));
   }
